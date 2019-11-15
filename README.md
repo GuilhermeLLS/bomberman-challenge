@@ -1,5 +1,5 @@
 # bomberman-challenge
-bomberman challenge 
+bomberman challenge made by Guilherme Luiz Lara Silva 
 
 # to run
 use npm run game
