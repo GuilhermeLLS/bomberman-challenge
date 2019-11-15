@@ -9,7 +9,6 @@ module.exports = class MatrixDrawers {
     startManipulation() {
         const PManipulators = new ProcedureManipulators(this.lines, this.columns, this.seconds)
         const finalMatrix = PManipulators.finalStateMatrix(this.drawInitialMatrix()) 
-        // return PManipulators.finalStateMatrix(this.drawInitialMatrix())
         console.log('Matriz Final: \n')
         finalMatrix.map(m => console.log(m.map(n => n.symbol)))
         return finalMatrix
@@ -18,7 +17,6 @@ module.exports = class MatrixDrawers {
     initialBombPlacement() {
         const placements = []
         const amountOfBombs = Math.floor(Math.random() * ((this.lines * this.columns) - 2))
-        console.log(amountOfBombs)
         for (let i = 0; i < amountOfBombs; i++) {
             const l = Math.floor(Math.random() * this.lines)
             const c = Math.floor(Math.random() * this.columns)
@@ -35,7 +33,6 @@ module.exports = class MatrixDrawers {
 
     drawInitialMatrix() {
         let initBombPlacements = this.initialBombPlacement()
-        console.log(initBombPlacements)
         let matrix = this.drawMatrixWithXsAndPoints()
         for (const initialBP of initBombPlacements) {
             matrix[initialBP.lineInitialBomb][initialBP.columnInitialBomb] = {

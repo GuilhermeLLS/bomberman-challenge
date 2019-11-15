@@ -42,17 +42,6 @@ module.exports = class ProcedureManipulators {
                 }  
             })
         )
-        // for (let i = 0; i < this.lines; i++) {
-            // for (let j = 0; j < this.columns; j++) {
-                // if (partialResultMatrix[i][j].secondIn === 0 && partialResultMatrix[i][j].symbol === '0') {
-                    // guardaBomba.push({ line: i, column: j })
-                // }
-            // }
-        // }
-        // let m = this.explodeBombs(partialResultMatrix, guardaBomba)
-        // console.log('matriz final: \n')
-        // m.map(a => console.log(a.map(n => n.symbol)))
-        // return m
         return this.explodeBombs(partialResultMatrix, guardaBomba)
     }
 
