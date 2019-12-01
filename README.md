@@ -2,7 +2,7 @@
 bomberman challenge made by Guilherme Luiz Lara Silva 
 
 # to run
-use npm run game
+use npm i, then npm run game
 
 # about the structre
 the project is divided between procedureManipulators and drawers. There is also a structure to read user input data.
